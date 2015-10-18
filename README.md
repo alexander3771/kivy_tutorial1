@@ -1,1 +1,8 @@
-# kivy_tutorial1
+# Awesome timer
+
+### Features
+
+  - Start
+  - Stop
+  - Reset
+

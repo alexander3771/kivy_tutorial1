@@ -1,8 +1,5 @@
-import time
-
 from kivy.app import App
 from kivy.properties import Clock
-
 from initial import *
 from elements import *
 
