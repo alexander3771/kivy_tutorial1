@@ -1,13 +1,18 @@
-from kivy.app import App
-from initial import *
-from kivy.core.window import Window
-from kivy.utils import get_color_from_hex
+import time
 
-Window.clearcolor = get_color_from_hex('#101215')
+from kivy.app import App
+from kivy.properties import Clock
+
+from initial import *
+from elements import *
 
 
 class ClockApp(App):
-    pass
+    def update_time(self, nap):
+        self.root.ids.time.text = time.strftime('[b]%H[/b].%M.%S')
+
+    def on_start(self):
+        Clock.schedule_interval(self.update_time, 1)
 
 
 if __name__ == '__main__':
